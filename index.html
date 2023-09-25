@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body {
+            background:linear-gradient(to right, red,rgb(252, 71, 71),white);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .form {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            border: 1px solid black;
+            background: white;
+            padding: 25px;
+            box-shadow: 2px 2px 2px black;
+        }
+        #array {
+            border:1px solid black;
+        }
+        #btn {
+             background:linear-gradient(to right, red,rgb(252, 71, 71),white);
+             border-radius: 8px;
+             color:rgb(7, 7, 6);
+           
+        }
+        #btn:hover {
+            background:red;
+            color:white;
+        }
+        #flista{
+            /* padding:20px; */
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <input type="number" name="arrai" id="arrai"/>
+        <input type="submit" onclick="recebe()" name="btn" id="btn" value="envie" /><br><br>
+        <select name="flista" size="6" id="flista"></select><br><br> 
+        <input type="submit" name="finish" id="finish" onclick="finalizar()"/><br><br>
+        
+     
+        <div id="res">
+            <h1></h1>
+        </div>
+
+        
+    </div> 
+        
+    <script src="./document.js"></script>
+</body>
+</html>
